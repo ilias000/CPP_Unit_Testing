@@ -31,6 +31,6 @@ int main(int argc, char *argv[])
     {
         cout << endl;
     }
-
+    cout << "hi from claire" << endl;
     return 0;
 }
