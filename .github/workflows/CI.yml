@@ -3,7 +3,7 @@ name: C++ CI
 on: [push, pull_request]
 
 jobs:
-  Build-Run-Test:
+  Build-Test-Run:
 
     runs-on: ubuntu-latest
 
