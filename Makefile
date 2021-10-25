@@ -1,13 +1,13 @@
-OBJS = Main.o
-SOURCE = Main.cpp
+OBJS = Main.o util.o
+SOURCE = Main.cpp util.cpp
 PROGRAM = Main
 
-TEST_OBJS = UnitTest.o
-TEST_SOURCE = UnitTest.cpp
+TEST_OBJS = UnitTests.o util.o
+TEST_SOURCE = UnitTests.cpp util.cpp
 TEST_PROGRAM = Test
 
 CC = g++
-CFLAGS = -Wall -g
+CFLAGS = -Wall
 
 all: $(PROGRAM) $(TEST_PROGRAM)
 
@@ -20,13 +20,16 @@ $(TEST_PROGRAM): clean $(TEST_OBJS)
 Main.o: Main.cpp
 	$(CC) $(CFLAGS) -c $?
 
-UnitTest.o: UnitTest.cpp
+util.o: util.cpp
+	$(CC) $(CFLAGS) -c $?
+
+UnitTests.o: UnitTests.cpp
 	$(CC) $(CFLAGS) -c $?
 
 clean:
-	rm -f $(OBJS) $(PROGRAM)
+	rm -f $(OBJS) $(PROGRAM) $(TEST_PROGRAM)
 
-test:
+runTest:
 	./$(TEST_PROGRAM)
 
 run:
