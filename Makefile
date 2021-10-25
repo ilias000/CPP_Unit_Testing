@@ -29,7 +29,7 @@ UnitTests.o: UnitTests.cpp
 clean:
 	rm -f $(OBJS) $(PROGRAM) $(TEST_PROGRAM)
 
-runTest:
+runTests:
 	./$(TEST_PROGRAM)
 
 run:

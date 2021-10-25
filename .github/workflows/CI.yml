@@ -12,7 +12,7 @@ jobs:
     - name: Build
       run: make
     - name: Run Tests
-      run: make tests
+      run: make runTests
     - name: Run Main
       run: ./Main
     - name: clean 
