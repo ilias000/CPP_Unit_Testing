@@ -13,9 +13,7 @@ jobs:
       run: make
     - name: Run Main
       run: ./Main
-    - name: make check
-      run: make check
-    - name: make distcheck
-      run: make distcheck
     - name: make Test
       run: make test
+    - name: clean 
+      run: make clean
