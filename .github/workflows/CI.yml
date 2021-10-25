@@ -4,16 +4,15 @@ on: [push, pull_request]
 
 jobs:
   Build-Run-Test:
-
     runs-on: ubuntu-latest
 
     steps:
-    - uses: actions/checkout@v2
-    - name: Build
-      run: make
-    - name: Run Tests
-      run: make runTests
-    - name: Run Main
-      run: ./Main
-    - name: clean 
-      run: make clean
+      - uses: actions/checkout@v2
+      - name: Build
+        run: make
+      - name: Run Tests
+        run: make runTests
+      - name: Run Main
+        run: ./Main
+      - name: clean
+        run: make clean
