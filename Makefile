@@ -1,7 +1,7 @@
 OBJS_DIR = obj/
 EXE_DIR = exe/
 
-OBJS = $(OBJS_DIR)Main.o $(OBJS_DIR)util.o
+OBJS = $(OBJS_DIR)Main.o $(OBJS_DIR)Util.o
 PROGRAM_NAME = Main
 PROGRAM_EXE = $(EXE_DIR)$(PROGRAM_NAME)
 
