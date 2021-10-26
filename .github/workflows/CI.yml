@@ -8,6 +8,8 @@ jobs:
 
     steps:
       - uses: actions/checkout@v2
+      - name: Cd to src directory
+        run: cd src
       - name: Build
         run: make
       - name: Run Tests
