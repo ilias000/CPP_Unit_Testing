@@ -20,13 +20,13 @@ $(PROGRAM_NAME): clean Main.o Util.o
 $(TEST_PROGRAM_NAME): clean UnitTests.o Util.o
 	$(CC) $(CFLAGS) $(TEST_OBJS) -o $(TEST_PROGRAM_EXE)
 
-Main.o: /src/main/Main.cpp
+Main.o: src/main/Main.cpp
 	$(CC) $(CFLAGS) -c /src/main/Main.cpp && mv Main.o $(OBJS_DIR)
 
-Util.o: /src/utilities/util.cpp
+Util.o: src/utilities/util.cpp
 	$(CC) $(CFLAGS) -c /src/utilities/util.cpp && mv Util.o $(OBJS_DIR)
 
-UnitTests.o: /src/tests/UnitTests.cpp
+UnitTests.o: src/tests/UnitTests.cpp
 	$(CC) $(CFLAGS) -c /src/tests/UnitTests.cpp && mv UnitTests.o $(OBJS_DIR)
 
 clean:
