@@ -23,7 +23,7 @@ $(TEST_PROGRAM_NAME): clean UnitTests.o Util.o
 Main.o: src/main/Main.cpp
 	$(CC) $(CFLAGS) -c src/main/Main.cpp && mv Main.o $(OBJS_DIR)
 
-Util.o: util.cpp
+Util.o: src/utilities/Util.cpp
 	$(CC) $(CFLAGS) -c src/utilities/util.cpp && mv Util.o $(OBJS_DIR)
 
 UnitTests.o: src/tests/UnitTests.cpp
