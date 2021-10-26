@@ -13,6 +13,6 @@ jobs:
       - name: Run Tests
         run: make runTests
       - name: Run Main
-        run: ./Main
+        run: make run
       - name: clean
         run: make clean
