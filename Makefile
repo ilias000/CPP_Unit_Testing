@@ -1,11 +1,11 @@
 OBJS_DIR = obj/
 EXE_DIR = exe/
 
-OBJS = $(OBJS_DIR)Main.o $(OBJS_DIR)Util.o
+OBJS = $(OBJS_DIR)Main.o $(OBJS_DIR)util.o
 PROGRAM_NAME = Main
 PROGRAM_EXE = $(EXE_DIR)$(PROGRAM_NAME)
 
-TEST_OBJS = $(OBJS_DIR)UnitTests.o $(OBJS_DIR)Util.o
+TEST_OBJS = $(OBJS_DIR)UnitTests.o $(OBJS_DIR)util.o
 TEST_PROGRAM_NAME = Test
 TEST_PROGRAM_EXE = $(EXE_DIR)$(TEST_PROGRAM_NAME)
 
@@ -32,7 +32,7 @@ UnitTests.o: src/tests/UnitTests.cpp
 clean:
 	rm -f $(OBJS) $(TEST_OBJS) $(PROGRAM_EXE) $(TEST_PROGRAM_EXE)
 
-runTests:
+test:
 	./$(TEST_PROGRAM_EXE)
 
 run:
