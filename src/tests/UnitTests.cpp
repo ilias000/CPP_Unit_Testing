@@ -1,5 +1,5 @@
-#include "acutest.hpp"
-#include "util.hpp"
+#include "../../externalLibraries/Acutest.hpp"
+#include "../utilities/Util.hpp"
 
 void test_add(void)
 {
