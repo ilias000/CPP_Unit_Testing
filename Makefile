@@ -24,7 +24,7 @@ Main.o: src/main/Main.cpp
 	$(CC) $(CFLAGS) -c src/main/Main.cpp && mv Main.o $(OBJS_DIR)
 
 Util.o: src/utilities/Util.cpp
-	$(CC) $(CFLAGS) -c src/utilities/util.cpp && mv Util.o $(OBJS_DIR)
+	$(CC) $(CFLAGS) -c src/utilities/Util.cpp && mv Util.o $(OBJS_DIR)
 
 UnitTests.o: src/tests/UnitTests.cpp
 	$(CC) $(CFLAGS) -c src/tests/UnitTests.cpp && mv UnitTests.o $(OBJS_DIR)
