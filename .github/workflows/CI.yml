@@ -11,7 +11,7 @@ jobs:
       - name: Build
         run: make
       - name: Run Tests
-        run: make runTests
+        run: make test
       - name: Run Main
         run: make run
       - name: clean
