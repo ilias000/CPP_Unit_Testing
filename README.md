@@ -11,7 +11,7 @@ Also in order to develop and maintain the project easily I created a makefile :
 | make test     | runs all the unit test                                                 |  
 | make clean    | removes all the executables and object files                           |  
 
-Last but not least I have create a pipeline on github that runs on every push and pull request.  
+Last but not least I have created a pipeline on GitHub that runs on every push and pull request.  
 The pipeline does the following jobs :  
 
 | Jobs          |                             |  
