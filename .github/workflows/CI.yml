@@ -14,5 +14,5 @@ jobs:
         run: make test
       - name: Run Main
         run: make run
-      - name: clean
+      - name: Clean
         run: make clean
