@@ -1,4 +1,4 @@
-# C++ Unit testing  
+# C++ Unit Testing  
 
 This is a test project in order to decide and learn how I can create unit tests for C++ projects.  
 The tests have to run on every linux based operating system.  
